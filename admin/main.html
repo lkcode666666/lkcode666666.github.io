@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>后台主页 - XzcBlogTemplate后台管理</title>
+    <link rel="stylesheet" href="../static/layui/css/layui.css">
+    <link rel="stylesheet" href="../static/admin/css/main.css">
+</head>
+<body>
+    <div class="layui-layout layui-layout-admin">
+        <div class="layui-header">
+            <div class="layui-logo">XzcBlogTemplate 后台管理</div>
+            <ul class="layui-nav layui-layout-left">
+                <li class="layui-nav-item"><a href="./index.html">后台首页</a></li>
+            </ul>
+            <ul class="layui-nav layui-layout-right">
+                <li class="layui-nav-item">
+                    <a href="javascript:;">
+                        <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
+                        <span>Brother</span>
+                    </a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="./info.html">基本资料</a></dd>
+                        <dd><a href="./aqset.html">安全设置</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item"><a href="javascript:;" onclick="layer.msg('退出登陆成功...');">退出登陆</a></li>
+            </ul>
+        </div>
+        <div class="layui-side layui-bg-black">
+            <div class="layui-side-scroll">
+            <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+                <ul class="layui-nav layui-nav-tree"  lay-filter="test">
+                    <li class="layui-nav-item">
+                        <a class="" href="javascript:;">博文系统</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="./blogadd.html">编写文章</a></dd>
+                            <dd><a href="./bloglist.html">文章管理</a></dd>
+                            <dd><a href="./stat.html">数据统计</a></dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="javascript:;">快捷导航</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="http://www.csdn.net">CSDN</a></dd>
+                            <dd><a href="http://www.gitee.com">码云</a></dd>
+                            <dd><a href="http://fanyi.baidu.com">百度翻译</a></dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a class="" href="javascript:;">系统管理</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="./webset.html">站点设置</a></dd>
+                            <dd><a href="./adset.html">广告设置</a></dd>
+                            <dd><a href="./link.html">友情链接</a></dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item"><a href="https://gitee.com/XzcGroup/XzcBlogTemplate" target="_blank">Git地址(脱离框架)</a></li>
+                    <li class="layui-nav-item"><a href="../index.html">开发文档</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="layui-body" style="overflow: hidden;">
+            <iframe src="./index.html" id="iframe-body"></iframe>
+        </div>
+        <div class="layui-footer" id="footer">
+            <!-- 底部固定区域 -->
+            © <a href="https://gitee.com/XzcGroup/XzcBlogTemplate" target="_blank" title="XzcBlogTemplate">XzcBlogTemplate</a> - 本套模板采用layui进行开发。
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="../static/layui/layui.all.js"></script>
+<script src="../static/admin/javascript/main.js"></script>
+</html>
